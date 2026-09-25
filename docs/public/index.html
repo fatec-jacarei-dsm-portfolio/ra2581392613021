@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - THIAGO DIAS FRANCISCO</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="topbar">
+    <a class="brand" href="#inicio">|||<span></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero section">
+            <div class="hero-name">Thiago Dias Francisco</div>
+            <div class="hero-photo photo-tilt">
+                <img src="./assets/images/Foto.png" alt="Foto de capa">
+            </div>
+            <h1>PORTFOLIO</h1>
+            <a class="scroll-cue" href="#sobre">↓ explorar</a>
+        </section>
+        <section id="sobre" class="about section">
+            <div class="about-heading">
+                <h2>Um pouco sobre mim.</h2>
+            </div>
+            <div class="about-main-image">
+                <img src="assets/images/Foto_com_flor.jpg" alt="foto com flor">
+            </div>
+            <div class="about-copy">
+                <p>
+                Sou uma pessoa curiosa, gosto de tecnologia e
+                estou construindo minha trajetória na área de desenvolvimento de
+                software. Tenho buscado aprender através de projetos práticos,
+                explorando tanto o desenvolvimento de interfaces
+                quanto a construção de sistemas no back-end.
+
+                Cada projeto é uma oportunidade para aprender algo novo,
+                melhorar minhas
+                habilidades e transformar conhecimento em experiência.
+                </p>
+            </div>
+            <img class="about-small-image" src="assets/images/Livro.jpg" alt="livro de estatistica">
+        </section>
+
+        <section id="sobre" class="about section">
+            <div class="about-heading">
+                <h2>Hobbies.</h2>
+            </div>
+            <div class="about-copy">
+                <p>
+                Em meu tempo livre, eu saio para ver as plantas em
+                ambiente externo, e na parte da manhã cuidos da
+                estufa de que tenho e da plantas de casa.
+                </p>
+            </div>
+            <div class="about-main-image">
+                <img src="assets/images/Estufa.jpg" alt="foto com flor">
+                <img class="about-small-image-left" src="assets/images/Flor.jpg" alt="livro de estatistica">
+            </div>
+            <img src="assets/images/Begonha_rex.jpg" alt="foto com flor"> 
+        </section>
+
+        <section id="projetos" class="proj section">
+        <h2>Meus Projetos</h2>
+
+        <div class="projects">
+            <article class="project" data-title="Portal Scrum"
+            data-description="Este site tem como objetivo de ensinar o metodologia ágil Scrum, neste projeto eu fiz a estrutura iniciar do backend, função de login do usuario, autenticação de interface e verificando codigos da minha equipe."
+            data-image="assets/images/projeto1.png"
+            data-link="https://github.com/TeamStacked/PortalScrum">
+            <button class="project-button" type="button">
+                <img src="assets/images/projeto1.png" alt="Este site tem como objetivo de ensinar o metodologia ágil Scrum">
+                <h3>Portal Scrum</h3>
+                <p>Projeto criado no 1º semestre <br>
+                    Este site tem como objetivo de ensinar a metodologia ágil Scrum
+                </p>
+            </button>
+            </article>
+            <article class="project" data-title="Projeto em andamento"
+            data-description="É proximo projeto"
+            data-image="assets/images/ProjetoAndamento.png">
+            <button class="project-button" type="button">
+                <img src="assets/images/ProjetoAndamento.png" alt="Em andamento">
+                <h3>Em Andamento</h3>
+                <p>Projeto em andamento</p>
+            </button>
+            </article>
+        </div>
+        </section>
+
+        <section id="habilidades" class="skills section">
+        <div class="skills-top">
+            <div>
+            <h2>HABILIDADES E<br>EXPERIENCIA</h2>
+            </div>
+            <img src="assets/images/Informatica.jpg" alt="Tela de computador com codigos de programação">
+            <div>
+            <h3>Programador</h3>
+            <ul>
+              <li>Domínio técnico em banco de dados em MySQL e Postgres.</li>
+              <li>Programador em TypeScript e C#.</li>
+              <li>Domínio técnico em Backend.</li>
+              <li>Domínio pleno em metodologia Scrum.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Outros Trabalhos</h3>
+            <ul>
+              <li>Serralheiro autônomo.</li>
+              <li>Domínio técnico em montagem de estruturas metálicas.</li>
+              <li>Atendimento técnico e priorizado ao cliente.</li>
+              <li>Ótimo no trabalho em equipe.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </section>
+    </main>
+    <div class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Fechar">×</button>
+      <img id="modal-image" src="" alt="">
+      <div>
+        <span>PROJETO</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <a id="modal-link" href = ""></a>
+      </div>
+    </div>
+  </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
