@@ -197,6 +197,58 @@ button { border: 0; background: none; }
   gap: 5vw;
 }
 
+/*___________________footer________________________*/
+
+.footer {
+    padding: 1fr 0 1fr;
+    border-top: 1px solid gray;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1fr;
+    margin-bottom: 2fr;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+}
+.footer-info p {
+    font-size: 1rem;
+}
+.footer-social {
+    display: flex;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--light-gray);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-700);
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--gray-200);
+    color: var(--gray-600);
+    font-size: 0.875rem;
+}
+
+/*___________________modal__________________________*/
 .modal {
   position: fixed;
   inset: 0;
