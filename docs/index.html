@@ -11,8 +11,9 @@
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
       <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#outras-informacoes">Outras informações</a>
       <a href="#contato">Contato</a>
     </nav>
     </header>
@@ -70,18 +71,97 @@
         <h2>Meus Projetos</h2>
 
         <div class="projects">
-            <article class="project" data-title="Portal Scrum"
-            data-description="Este site tem como objetivo de ensinar o metodologia ágil Scrum, neste projeto eu fiz a estrutura iniciar do backend, função de login do usuario, autenticação de interface e verificando codigos da minha equipe."
-            data-image="assets/images/projeto1.png"
-            data-link="https://github.com/TeamStacked/PortalScrum">
-            <button class="project-button" type="button">
-                <img src="assets/images/projeto1.png" alt="Este site tem como objetivo de ensinar o metodologia ágil Scrum">
-                <h3>Portal Scrum</h3>
-                <p>Projeto criado no 1º semestre <br>
-                    Este site tem como objetivo de ensinar a metodologia ágil Scrum
-                </p>
-            </button>
+            
+            <article class="project"
+                data-title="Portal Scrum"
+                data-description='
+                    <h3>Plataforma de aprendizagem e certificação em Scrum</h3>
+                    <p>Projeto acadêmico desenvolvido em equipe com o objetivo de disponibilizar conteúdos e avaliações sobre a metodologia ágil Scrum, incluindo acompanhamento de desempenho e emissão de certificados.</p>
+
+                    <h3>Minhas contribuições:</h3>
+
+                    <ul>
+                        <li><strong>Autenticação:</strong> integração do JWT com cookies HTTP para gerenciamento da sessão dos usuários.</li>
+
+                        <li><strong>Controle de acesso:</strong> desenvolvimento e ajustes de middlewares para proteger páginas privadas e controlar o acesso de usuários autenticados.</li>
+
+                        <li><strong>Rotas do backend:</strong> organização de rotas no Express para disponibilização de páginas públicas, privadas e página de erro 404.</li>
+
+                        <li><strong>Logout:</strong> implementação do encerramento de sessão, incluindo a remoção do cookie de autenticação.</li>
+
+                        <li><strong>Certificados:</strong> desenvolvimento de consulta SQL para calcular a média final dos exames e inclusão desse resultado nos dados retornados pelo certificado.</li>
+
+                        <li><strong>Dados do estudante:</strong> ajuste da consulta e do retorno JSON para incluir o e-mail do usuário nos dados do certificado.</li>
+                    </ul>
+
+                    <p><strong>Tecnologias utilizadas:</strong> Node.js, JavaScript, Express, PostgreSQL, HTML e CSS.</p>
+                '
+                data-image="assets/images/projeto1.png"
+                data-link="https://github.com/TeamStacked/PortalScrum">
+
+                <button class="project-button" type="button">
+                    <img src="assets/images/projeto1.png"
+                        alt="Página do projeto Portal Scrum">
+
+                    <h3>Projeto da ABP do 1º Semestre - Portal Scrum</h3>
+
+                    <p>
+                        Projeto acadêmico desenvolvido no 1º semestre.
+                        Plataforma de aprendizagem e certificação em Scrum.
+                    </p>
+                </button>
             </article>
+
+            <article class="project"
+                data-title="EcoByteMetrics"
+                data-description='
+                    <h3>Plataforma de monitoramento energético e impacto ambiental</h3>
+
+                    <p>Projeto acadêmico desenvolvido em equipe com o objetivo de monitorar serviços, analisar o consumo energético e estimar o impacto ambiental por meio do cálculo de emissões de CO₂ equivalente (CO₂e).</p>
+
+                    <h3>Minhas contribuições:</h3>
+
+                    <ul>
+                        <li><strong>Banco de dados:</strong> participação na modelagem e estruturação do banco PostgreSQL, desenvolvimento de scripts SQL para criação e atualização das tabelas, além da implementação de índices e constraints para otimizar consultas.</li>
+
+                        <li><strong>Backend:</strong> desenvolvimento e organização de funcionalidades utilizando arquitetura modular, com separação entre Controllers, Services e Repositories.</li>
+
+                        <li><strong>Autenticação:</strong> implementação e ajustes da autenticação com JWT e proteção de rotas da aplicação.</li>
+
+                        <li><strong>Processamento de métricas:</strong> desenvolvimento de funcionalidades para persistência e processamento de dados relacionados aos serviços monitorados e à intensidade de carbono.</li>
+
+                        <li><strong>Indicadores ambientais:</strong> implementação de cálculos de consumo energético e estimativa de emissões de CO₂e, contribuindo para a análise do impacto ambiental dos serviços.</li>
+
+                        <li><strong>Comparação de serviços:</strong> desenvolvimento de endpoint REST para comparar métricas históricas de múltiplos serviços em diferentes períodos, utilizando consultas SQL nativas no PostgreSQL, sem ORM.</li>
+
+                        <li><strong>Automatização:</strong> participação na implementação de workers para coleta e processamento periódico de métricas.</li>
+
+                        <li><strong>Infraestrutura:</strong> configuração e utilização de Docker e Docker Compose para facilitar a execução e o gerenciamento dos serviços da aplicação.</li>
+
+                        <li><strong>Provisionamento inicial:</strong> ajustes nos scripts SQL para criação de usuários padrão ADMIN e USER, com armazenamento de senhas utilizando hash Bcrypt.</li>
+                    </ul>
+
+                    <p><strong>Tecnologias utilizadas:</strong> Node.js, TypeScript, Express, PostgreSQL, SQL, JWT, Bcrypt, Docker e Docker Compose.</p>
+
+                '
+                data-image="assets/images/Projeto EcoByteMetrics.png"
+                data-link="https://github.com/pentascripts-organization/EcoByteMetrics">
+
+                <button class="project-button" type="button">
+                    <img src="assets/images/Projeto EcoByteMetrics.png"
+                        alt="Página do projeto EcoByteMetrics">
+
+                    <h3>Projeto da ABP do 2º Semestre - EcoByteMetrics</h3>
+
+                    <p>
+                        Projeto acadêmico desenvolvido em equipe.
+                        Plataforma de monitoramento que analisa o consumo energético
+                        e estima o impacto ambiental de serviços por meio das emissões de CO₂e.
+                    </p>
+                </button>
+            </article>
+
+
             <article class="project" data-title="Projeto em andamento"
             data-description="É proximo projeto"
             data-image="assets/images/ProjetoAndamento.png">
@@ -121,6 +201,67 @@
         </div>
         </div>
         </section>
+        <section id="outras-informacoes" class="outras-informacoes">
+            <div class="container">
+
+                <h2 class="section-label">TRAJETÓRIA ACADÊMICA</h2>
+
+                <h3>Outras informações.</h3>
+
+                <div class="formacao-card">
+                    <span class="formacao-periodo">2014 — Concluído</span>
+
+                    <h3>Ensino médio</h3>
+
+                    <p>
+                        <strong>Instituição:</strong>
+                        EE PROF. ADHERBAL DE CASTRO
+                </div>
+                <div class="formacao-card">
+                    <span class="formacao-periodo">2016 — Concluído</span>
+
+                    <h3>Tecnico de informatica</h3>
+
+                    <p>
+                        <strong>Instituição:</strong>
+                        ESCOLA TÉCNICA ESTADUAL PROFA ILZA NASCIMENTO PINTUS
+                    </p>
+
+                    <p>
+                        <strong>Nível:</strong>
+                        Ensino técnico
+                    </p>
+
+                    <p>
+                        <strong>Ingresso:</strong>
+                        2º semestre de 2014
+                    </p>
+                </div>
+                <div class="formacao-card">
+                    <span class="formacao-periodo">2026 — Em andamento</span>
+
+                    <h3>Desenvolvimento de Software Multiplataforma</h3>
+
+                    <p>
+                        <strong>Instituição:</strong>
+                        Faculdade de Tecnologia de Jacareí (Fatec Jacareí)
+                    </p>
+
+                    <p>
+                        <strong>Nível:</strong>
+                        Ensino Superior — Tecnólogo
+                    </p>
+
+                    <p>
+                        <strong>Ingresso:</strong>
+                        1º semestre de 2026
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -143,14 +284,6 @@
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </a>
-                    <a href="mailto:" title="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                     </a>
                 </div>

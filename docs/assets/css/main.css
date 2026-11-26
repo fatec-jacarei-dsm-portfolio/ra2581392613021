@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
 
 :root {
   --paper: #f8f8f6;
@@ -150,7 +149,7 @@ button { border: 0; background: none; }
   padding: 0;
 }
 .project-button img {
-  aspect-ratio: 1.25 / 1;
+  aspect-ratio: 1.5 / 1;
   filter: grayscale(.15);
   transition: transform .5s ease, filter .5s ease;
 }
@@ -196,6 +195,40 @@ button { border: 0; background: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 5vw;
 }
+
+
+.outras-informacoes {
+    padding: 100px 8%;
+}
+
+.outras-informacoes h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    margin: 20px 0 50px;
+}
+
+.formacao-card {
+    border-top: 1px solid var(--muted);
+    border-bottom: 1px solid var(--muted);
+    padding: 30px 0;
+}
+
+.formacao-periodo {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.formacao-card h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.formacao-card p {
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
 
 /*___________________footer________________________*/
 
@@ -248,51 +281,94 @@ button { border: 0; background: none; }
     font-size: 0.875rem;
 }
 
+
 /*___________________modal__________________________*/
+
 .modal {
   position: fixed;
   inset: 0;
   z-index: 50;
   display: grid;
   place-items: center;
+  padding: 0px;
   opacity: 0;
   visibility: hidden;
   transition: opacity .3s ease, visibility .3s ease;
 }
-.modal.open { opacity: 1; visibility: visible; }
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,.75);
   backdrop-filter: blur(5px);
 }
+
 .modal-card {
   position: relative;
   z-index: 1;
-  width: min(900px, 100vw);
-  max-height: 120vh;
-  overflow: auto;
+  width: min(1100px, 100%);
+  max-height: 88vh;
+  overflow: hidden;
   background: var(--paper);
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 500px minmax(0, 1fr);
 }
-.modal-card img { height: 100%; min-height: 400px; }
-.modal-card > div { padding: 4rem; align-self: center; }
-.modal-card > div span { font-size: .85rem; letter-spacing: .2em; }
+
+.modal-card img {
+  width: 100%;
+  height: 500px;
+  min-height: 0;
+  object-fit: fill;
+}
+
+.modal-card > div {
+  min-height: 0;
+  padding: clamp(1.5rem, 3vw, 3rem);
+  align-self: stretch;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-card > div span {
+  font-size: .85rem;
+  letter-spacing: .2em;
+}
+
 .modal-card h2 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 4vw, 4rem);
-  font-weight: 400;
-  line-height: 1;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1rem;
 }
-.modal-card p { font-size: 1.05rem; line-height: 1.6; }
+
+.modal-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 1.5rem;
+}
+
+.modal-card p {
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
 .modal-close {
   position: absolute;
   z-index: 2;
-  right: 15px; top: 8px;
+  right: 15px;
+  top: 8px;
   font-size: 2.2rem;
   cursor: pointer;
 }
+
 
 .reveal {
   opacity: 0;
@@ -337,7 +413,27 @@ button { border: 0; background: none; }
   .skills-grid { margin-top: 12vw; }
   .projects { grid-template-columns: 1fr; gap: 14vw; }
   .contact-photo { width: 70%; margin-top: 8vw; }
-  .modal-card { grid-template-columns: 1fr; max-height: 88vh; }
-  .modal-card img { min-height: 250px; max-height: 45vh; }
-  .modal-card > div { padding: 2rem; }
+
+  .modal {
+    border: 2px;
+  }
+
+  .modal-card {
+    width: 100%;
+    height: 90vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh minmax(0, 1fr);
+  }
+
+  .modal-card img {
+    width: 100%;
+    height: 40vh;
+    min-height: 0;
+    object-fit: cover;
+  }
+
+  .modal-card > div {
+    overflow-y: auto;
+  }
+
 }
