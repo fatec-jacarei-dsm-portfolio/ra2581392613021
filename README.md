@@ -10,7 +10,7 @@
 
 ## Portfólio online
 
-🔗 [Acesse o Portfólio](https://dashboard.render.com/static/srv-dc4t5ip7lnhs739p5je0/settings)
+🔗 [Acesse o Portfólio](https://ra2581392613021.onrender.com/)
 
 🎤 [Pitch de Apresentação (vídeo)](https://youtube.com/shorts/yrJlwyH6oMI?feature=share)
 
