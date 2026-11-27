@@ -12,7 +12,7 @@
 
 🔗 [Acesse o Portfólio](INSIRA_O_LINK_DO_PORTFOLIO)
 
-🎤 [Pitch de Apresentação (vídeo)](INSIRA_O_LINK_DO_VIDEO)
+🎤 [Pitch de Apresentação (vídeo)](https://youtube.com/shorts/yrJlwyH6oMI?feature=share)
 
 ---
 
